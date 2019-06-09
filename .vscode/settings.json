@@ -1,0 +1,46 @@
+{
+  "sqltools.connections": [
+    {
+      "askForPassword": false,
+      "connectionTimeout": 30,
+      "database": "containerdb",
+      "dialect": "MySQL",
+      "name": "localhost",
+      "password": "user1234",
+      "port": 3306,
+      "server": "127.0.0.1",
+      "username": "user"
+    },
+    {
+      "connectionTimeout": 30,
+      "database": "StudentRep",
+      "dialect": "MSSQL",
+      "name": "remote api",
+      "password": "yourStrong(*)Paper",
+      "port": 1433,
+      "server": "127.0.0.1",
+      "username": "sa"
+    },
+    {
+      "connectionTimeout": 30,
+      "database": "StudentRep",
+      "dialect": "MSSQL",
+      "name": "docker",
+      "password": "yourStrong(*)Password",
+      "port": 1433,
+      "server": "127.0.0.1",
+      "username": "sa"
+    },
+    {
+      "askForPassword": false,
+      "connectionTimeout": 30,
+      "database": "StudentRep",
+      "dialect": "MSSQL",
+      "name": "remote api",
+      "password": "yourStrong(*)Password",
+      "port": 1433,
+      "server": "178.128.115.122",
+      "username": "sa"
+    }
+  ]
+}
