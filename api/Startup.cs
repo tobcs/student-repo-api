@@ -30,7 +30,7 @@ namespace api
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             // Connect to DB
-            string connection = "Server=localhost;Database=StudentRep;User=sa;Password=yourStrong(*)Password;";
+            string connection = "Server=192.168.99.100;Database=StudentRep;User=sa;Password=yourStrong(*)Password";
 
             services.AddDbContext<SRAContext>(options => options
                     .UseSqlServer(connection)
@@ -49,7 +49,7 @@ namespace api
                 app.UseHsts();
             }
 
-            //app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
             app.UseMvc();
         }
     }

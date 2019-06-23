@@ -19,4 +19,5 @@ CREATE TABLE "Feedback" (
   "votes" int NOT NULL
 )
 
-INSERT INTO Feedback (issue, feedback, votes) VALUES ('We want teams!', 'You can now use teams', 4);
+INSERT INTO Feedback (issue, feedback, votes) VALUES 
+('We want teams!', 'You can now use teams', 4);
