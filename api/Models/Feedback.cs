@@ -9,5 +9,6 @@ namespace api.Models
         public string Issue { get; set; }
         public string Feedback1 { get; set; }
         public int Votes { get; set; }
+        public string Following { get; set; }
     }
 }

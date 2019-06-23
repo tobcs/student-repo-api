@@ -38,6 +38,17 @@ namespace api.Controllers
             return item;
         }
 
+        [HttpPost]
+        public async Task<ActionResult<Feedback>> PostFeedback(Feedback item)
+        {
+            _context.Feedback.Add(item);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(
+              nameof(GetMODEL),
+              item);
+        }
+
         [HttpPut("{id}")]
         public async Task<IActionResult> PutMODELItem(int id, Feedback item)
         {
